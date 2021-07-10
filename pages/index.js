@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-pattern section-shadow">
+      <section className="bg-pattern section-shadow relative">
         <div className="container mx-auto px-14 py-20 grid grid-cols-2 gap-12 text-lg">
           <div>
             <h3 className="font-cursive text-yellow-500 text-center text-4xl">
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-pattern section-shadow">
+      <section className="bg-pattern section-shadow relative">
         <div className="container mx-auto px-14 py-20">
           <div className="grid grid-cols-12 gap-12 items-center">
             <div className="col-span-3">
