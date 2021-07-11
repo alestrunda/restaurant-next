@@ -8,11 +8,12 @@ export default function Home() {
       <Head title="My page" />
 
       <div className="bg-section-1 bg-center bg-cover text-white min-h-screen flex flex-col justify-center relative">
+        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-10"></div>
         <div className="absolute left-0 top-0 w-full">
           <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black to-transparent opacity-80"></div>
           <div className="container flex justify-between mx-auto relative z-10 px-14">
             <img className="self-center" src="img/logo.png" />
-            <nav className="font-serif font-bold text-xl mb-4">
+            <nav className="font-serif font-bold text-shadow-sm text-xl mb-4">
               <ul className="flex justify-between">
                 <NavItem active href="" title="Home" />
                 <NavItem href="" title="About" />
@@ -24,8 +25,8 @@ export default function Home() {
             </nav>
           </div>
         </div>
-        <div className="container mx-auto text-center px-14 py-32">
-          <h1 className="font-cursive leading-normal text-3xl xl:text-8xl xl:leading-tight lg:text-7xl lg:leading-tight md:text-5xl md:leading-normal sm:text-4xl sm:leading-normal">
+        <div className="container mx-auto text-center px-14 py-32 relative z-10">
+          <h1 className="font-cursive leading-normal text-shadow-md text-3xl xl:text-8xl xl:leading-tight lg:text-7xl lg:leading-tight md:text-5xl md:leading-normal sm:text-4xl sm:leading-normal">
             the right ingredients
             <br />
             for the right food
@@ -64,7 +65,7 @@ export default function Home() {
 
       <section className="bg-section-2 bg-center bg-cover text-white text-center">
         <div className="container mx-auto grid grid-cols-2 px-14 py-20">
-          <div className="col-start-2 bg-black bg-opacity-50 py-16 px-16">
+          <div className="col-start-2 bg-black bg-opacity-60 py-16 px-16">
             <h2 className="font-cursive text-4xl">Fine ingredients</h2>
             <div className="decoration-white h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
             <p>
@@ -147,7 +148,7 @@ export default function Home() {
 
       <section className="bg-section-3 bg-center bg-cover">
         <div className="container grid grid-cols-12 mx-auto px-14 py-20 text-white text-center">
-          <div className="bg-black col-start-3 col-span-8 bg-opacity-50 py-16 px-16 mx-auto">
+          <div className="bg-black col-start-3 col-span-8 bg-opacity-60 py-16 px-16 mx-auto">
             <h2 className="font-cursive text-4xl">Guest Reviews</h2>
             <div className="decoration-white h-6 bg-no-repeat bg-center mb-8 mt-4 opacity-70"></div>
             <p className="font-serif font-bold text-2xl leading-loose mb-6">

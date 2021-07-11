@@ -1,15 +1,15 @@
 @tailwind utilities;
 
 .bg-section-1 {
-  background-image: url("public/img/bg1.png");
+  background-image: url("public/img/bg1.jpg");
 }
 
 .bg-section-2 {
-  background-image: url("public/img/bg2.png");
+  background-image: url("public/img/bg2.jpg");
 }
 
 .bg-section-3 {
-  background-image: url("public/img/bg2.png");
+  background-image: url("public/img/bg3.jpg");
 }
 
 .button {
@@ -50,15 +50,15 @@
 
 @responsive {
   .text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.30);
   }
 
   .text-shadow-md {
-    text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.2);
   }
 
   .text-shadow-lg {
-    text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
+    text-shadow: 0 15px 30px rgba(0,0,0,0.3), 0 5px 15px rgba(0,0,0,0.2);
   }
 
   .text-shadow-none {
