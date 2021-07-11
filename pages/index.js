@@ -5,7 +5,7 @@ import NavItem from "../components/NewItem";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center min-h-screen">
-      <Head title="My page" />
+      <Head />
 
       <div className="bg-section-1 bg-center bg-cover text-white min-h-screen flex flex-col justify-center relative">
         <div className="absolute left-0 top-0 h-full w-full bg-black opacity-10"></div>
