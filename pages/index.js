@@ -97,50 +97,89 @@ export default function Home() {
         <div className="container mx-auto px-14 py-20 grid grid-cols-2 gap-12 text-lg">
           <div>
             <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Appetisers
+              Light Nibbles
             </h3>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
-            <MenuItem price={3.99} title="Tzatsiki">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={4.99} title="Seafood Chowder">
+              <p>Nullam iaculis vitae est vel volutpat.</p>
             </MenuItem>
-            <MenuItem isSpecial price={3.99} title="Tzatsiki">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem isSpecial price={4.99} title="Island Salad">
+              <p>
+                Sed tristique egestas mi, sit amet ullamcorper mi blandit id.
+                Vivamus at elementum nibh.
+              </p>
             </MenuItem>
-            <MenuItem price={3.99} title="Tzatsiki">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={8.99} title="Lobster Baby Rolls">
+              <p>Nam ut tellus tincidunt, imperdiet massa sed, congue augue.</p>
+            </MenuItem>
+            <MenuItem price={7.99} title="BLT Croissant-wich">
+              <p>
+                In auctor porta dolor id laoreet. Sed porttitor mauris eu neque
+                semper venenatis.
+              </p>
             </MenuItem>
           </div>
           <div>
             <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Salads
+              Tummy Fillers
             </h3>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
-            <MenuItem price={5.99} title="Olive Special">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={8.99} title="Fish Fingers &amp; Fries">
+              <p>
+                Aliquam erat volutpat. Nullam at lectus ut dolor dictum feugiat
+                ut vel odio.
+              </p>
             </MenuItem>
-            <MenuItem price={5.99} title="Olive Special">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={9.99} title="Grilled Sausages Platter">
+              <p>Praesent accumsan, nunc dictum venenatis scelerisque.</p>
             </MenuItem>
-            <MenuItem price={5.99} title="Olive Special">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={9.99} title="Roast Chicken &amp; Potatoes">
+              <p>
+                Velit sem sodales dolor, sed aliquet ligula mauris vitae ex.
+              </p>
+            </MenuItem>
+            <MenuItem isSpecial price={11.99} title="Steak Frites">
+              <p>In quis velit id odio laoreet convallis.</p>
             </MenuItem>
           </div>
           <div>
             <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Starters
+              The Sweet Tooth
             </h3>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
-            <MenuItem price={3.99} title="Haloumi">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={3.99} title="Doughnuts">
+              <p>
+                Nunc mauris enim, pulvinar vitae mi ut, suscipit elementum
+                purus.
+              </p>
+            </MenuItem>
+            <MenuItem isSpecial price={3.99} title="Fruit Danish">
+              <p>
+                Etiam neque libero, dictum in luctus eu, accumsan placerat
+                purus.
+              </p>
+            </MenuItem>
+            <MenuItem price={4.99} title="Pie of the Day">
+              <p>Vivamus volutpat, mauris lacinia sagittis cursus.</p>
             </MenuItem>
           </div>
           <div>
             <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Main Dishes
+              Drinks
             </h3>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
-            <MenuItem price={5.99} title="Cornish Mackerel">
-              <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            <MenuItem price={2.99} title="Hot or Iced Coffee">
+              <p>Morbi pretium ultricies erat et sodales.</p>
+            </MenuItem>
+            <MenuItem price={2.99} title="Hot or Iced Tea">
+              <p>
+                Duis sollicitudin pharetra lectus, non euismod nunc mattis eget.
+              </p>
+            </MenuItem>
+            <MenuItem price={3.99} title="Fresh Fruit Smoothies">
+              <p>
+                Nam faucibus risus id ante hendrerit, nec euismod odio finibus.
+              </p>
             </MenuItem>
           </div>
         </div>
