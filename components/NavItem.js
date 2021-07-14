@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 
-const NewItem = ({ active, href, title }) => (
+const NavItem = ({ active, href, title }) => (
   <li className="group mx-3 relative overflow-hidden">
     <div
       className={classNames(
@@ -16,4 +16,4 @@ const NewItem = ({ active, href, title }) => (
   </li>
 );
 
-export default NewItem;
+export default NavItem;

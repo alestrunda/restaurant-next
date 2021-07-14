@@ -1,6 +1,10 @@
+import Button from "../components/Button";
+import ButtonOpacity from "../components/ButtonOpacity";
 import Head from "../components/Head";
+import HeadingSection from "../components/HeadingSection";
+import Input from "../components/Input";
 import MenuItem from "../components/MenuItem";
-import NavItem from "../components/NewItem";
+import NavItem from "../components/NavItem";
 
 export default function Home() {
   return (
@@ -32,21 +36,15 @@ export default function Home() {
             for the right food
           </h1>
           <div className="decoration-white h-8 mt-10 mb-14 bg-no-repeat bg-center"></div>
-          <button className="uppercase mx-3 px-9 py-3 bg-black bg-opacity-40 border-black border text-lg text-shadow-sm transition-colors hover:bg-opacity-70">
-            book a table
-          </button>
-          <button className="uppercase mx-3 px-9 py-3 bg-white bg-opacity-40 border-white border text-lg text-shadow-sm transition-colors hover:bg-opacity-70">
-            see the menu
-          </button>
+          <ButtonOpacity className="mx-3">book a table</ButtonOpacity>
+          <ButtonOpacity className="mx-3">see the menu</ButtonOpacity>
         </div>
       </div>
 
       <section className="bg-pattern section-shadow relative">
         <div className="container mx-auto md:grid grid-cols-12 items-center text-center px-14 py-20">
           <div className="col-span-5 md:px-6">
-            <h2 className="font-cursive text-yellow-500 text-4xl">
-              Just the right food
-            </h2>
+            <HeadingSection>Just the right food</HeadingSection>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
             <p>
               If you’ve been to one of our restaurants, you’ve seen – and tasted
@@ -66,7 +64,7 @@ export default function Home() {
       <section className="bg-section-2 bg-center bg-cover text-white text-center">
         <div className="container mx-auto grid grid-cols-2 px-14 py-20">
           <div className="col-start-2 bg-black bg-opacity-60 py-16 px-16">
-            <h2 className="font-cursive text-4xl">Fine ingredients</h2>
+            <HeadingSection color="white">Fine ingredients</HeadingSection>
             <div className="decoration-white h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
             <p>
               If you’ve been to one of our restaurants, you’ve seen – and tasted
@@ -76,18 +74,9 @@ export default function Home() {
               out!
             </p>
             <div className="flex justify-center gap-12 mt-16 mb-2">
-              <img
-                className="rounded-full border-white border-4 border-opacity-10 transform transition-all duration-500 hover:border-opacity-40 hover:scale-110 hover:rotate-2"
-                src="img/ingredients/1.png"
-              />
-              <img
-                className="rounded-full border-white border-4 border-opacity-10 transform transition-all duration-500 hover:border-opacity-40 hover:scale-110 hover:rotate-2"
-                src="img/ingredients/2.png"
-              />
-              <img
-                className="rounded-full border-white border-4 border-opacity-10 transform transition-all duration-500 hover:border-opacity-40 hover:scale-110 hover:rotate-2"
-                src="img/ingredients/3.png"
-              />
+              <Thumbnail src="img/ingredients/1.png" />
+              <Thumbnail src="img/ingredients/2.png" />
+              <Thumbnail src="img/ingredients/3.png" />
             </div>
           </div>
         </div>
@@ -96,9 +85,7 @@ export default function Home() {
       <section className="bg-pattern section-shadow relative">
         <div className="container mx-auto px-14 py-20 grid grid-cols-2 gap-12 text-lg">
           <div>
-            <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Light Nibbles
-            </h3>
+            <HeadingSection as="h3">Light Nibbles</HeadingSection>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
             <MenuItem price={4.99} title="Seafood Chowder">
               <p>Nullam iaculis vitae est vel volutpat.</p>
@@ -120,9 +107,7 @@ export default function Home() {
             </MenuItem>
           </div>
           <div>
-            <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Tummy Fillers
-            </h3>
+            <HeadingSection as="h3">Tummy Fillers</HeadingSection>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
             <MenuItem price={8.99} title="Fish Fingers &amp; Fries">
               <p>
@@ -143,9 +128,7 @@ export default function Home() {
             </MenuItem>
           </div>
           <div>
-            <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              The Sweet Tooth
-            </h3>
+            <HeadingSection as="h3">The Sweet Tooth</HeadingSection>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
             <MenuItem price={3.99} title="Doughnuts">
               <p>
@@ -164,9 +147,7 @@ export default function Home() {
             </MenuItem>
           </div>
           <div>
-            <h3 className="font-cursive text-yellow-500 text-center text-4xl">
-              Drinks
-            </h3>
+            <HeadingSection as="h3">Drinks</HeadingSection>
             <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
             <MenuItem price={2.99} title="Hot or Iced Coffee">
               <p>Morbi pretium ultricies erat et sodales.</p>
@@ -188,7 +169,7 @@ export default function Home() {
       <section className="bg-section-3 bg-center bg-cover">
         <div className="container grid grid-cols-12 mx-auto px-14 py-20 text-white text-center">
           <div className="bg-black col-start-3 col-span-8 bg-opacity-60 py-16 px-16 mx-auto">
-            <h2 className="font-cursive text-4xl">Guest Reviews</h2>
+            <HeadingSection color="white">Guest Reviews</HeadingSection>
             <div className="decoration-white h-6 bg-no-repeat bg-center mb-8 mt-4 opacity-70"></div>
             <p className="font-serif font-bold text-2xl leading-loose mb-6">
               If you’ve been to one of our restaurants, you’ve seen – and tasted
@@ -213,9 +194,7 @@ export default function Home() {
             </div>
             <div className="col-span-6 px-6">
               <div class="text-center mb-10">
-                <h2 className="font-cursive text-yellow-500 text-4xl">
-                  Just the right food
-                </h2>
+                <HeadingSection>Just the right food</HeadingSection>
                 <div className="decoration-gold h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
                 <p>
                   If you’ve been to one of our restaurants, you’ve seen – and
@@ -237,8 +216,7 @@ export default function Home() {
                     >
                       First name
                     </label>
-                    <input
-                      className="block mb-6 w-full border border-yellow-500 italic bg-white px-3 py-1 bg-opacity-20 transition-colors duration-300 focus:bg-yellow-500 focus:bg-opacity-20 focus:outline-none"
+                    <Input
                       id="first-name"
                       placeholder="First name"
                       type="text"
@@ -251,12 +229,7 @@ export default function Home() {
                     >
                       Last name
                     </label>
-                    <input
-                      className="block mb-6 w-full border border-yellow-500 italic bg-white px-3 py-1 bg-opacity-20 transition-colors duration-300 focus:bg-yellow-500 focus:bg-opacity-20 focus:outline-none"
-                      id="last-name"
-                      placeholder="Last name"
-                      type="text"
-                    />
+                    <Input id="last-name" placeholder="Last name" type="text" />
                   </div>
                   <div>
                     <label
@@ -265,12 +238,7 @@ export default function Home() {
                     >
                       Date
                     </label>
-                    <input
-                      className="block mb-6 w-full border border-yellow-500 italic bg-white px-3 py-1 bg-opacity-20 transition-colors duration-300 focus:bg-yellow-500 focus:bg-opacity-20 focus:outline-none"
-                      id="date"
-                      placeholder="Date"
-                      type="text"
-                    />
+                    <Input id="date" placeholder="Date" type="text" />
                   </div>
                   <div>
                     <label
@@ -279,20 +247,10 @@ export default function Home() {
                     >
                       Email
                     </label>
-                    <input
-                      className="block mb-6 w-full border border-yellow-500 italic bg-white px-3 py-1 bg-opacity-20 transition-colors duration-300 focus:bg-yellow-500 focus:bg-opacity-20 focus:outline-none"
-                      id="email"
-                      placeholder="Email"
-                      type="email"
-                    />
+                    <Input id="email" placeholder="Email" type="email" />
                   </div>
                 </div>
-                <button
-                  className="block mx-auto mb-4 text-white px-9 py-2 bg-yellow-500 bg-opacity-70 text-lg text-shadow-sm transition-colors hover:bg-opacity-100"
-                  type="submit"
-                >
-                  Book now!
-                </button>
+                <Button type="submit">Book now!</Button>
               </form>
             </div>
           </div>
