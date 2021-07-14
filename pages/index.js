@@ -5,6 +5,7 @@ import HeadingSection from "../components/HeadingSection";
 import Input from "../components/Input";
 import MenuItem from "../components/MenuItem";
 import NavItem from "../components/NavItem";
+import Thumbnail from "../components/Thumbnail";
 
 export default function Home() {
   return (
