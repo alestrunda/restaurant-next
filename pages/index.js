@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import ButtonOpacity from "../components/ButtonOpacity";
+import Decoration from "../components/Decoration";
 import Head from "../components/Head";
 import HeadingSection from "../components/HeadingSection";
 import Input from "../components/Input";
@@ -36,7 +37,7 @@ export default function Home() {
             <br />
             for the right food
           </h1>
-          <div className="decoration-white h-8 mt-10 mb-14 bg-no-repeat bg-center"></div>
+          <Decoration className="mt-10 mb-14" color="white" size={8} />
           <ButtonOpacity className="mx-3">book a table</ButtonOpacity>
           <ButtonOpacity className="mx-3">see the menu</ButtonOpacity>
         </div>
@@ -46,7 +47,7 @@ export default function Home() {
         <div className="container mx-auto md:grid grid-cols-12 items-center text-center px-14 py-20">
           <div className="col-span-5 md:px-6">
             <HeadingSection>Just the right food</HeadingSection>
-            <div className="decoration-gold h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
+            <Decoration className="mb-8 mt-4" />
             <p>
               If you’ve been to one of our restaurants, you’ve seen – and tasted
               – what keeps our customers coming back for more. Perfect materials
@@ -66,7 +67,7 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-2 px-14 py-20">
           <div className="col-start-2 bg-black bg-opacity-60 py-16 px-16">
             <HeadingSection color="white">Fine ingredients</HeadingSection>
-            <div className="decoration-white h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
+            <Decoration className="mb-8 mt-4" color="white" />
             <p>
               If you’ve been to one of our restaurants, you’ve seen – and tasted
               – what keeps our customers coming back for more. Perfect materials
@@ -87,7 +88,7 @@ export default function Home() {
         <div className="container mx-auto px-14 py-20 grid grid-cols-2 gap-12 text-lg">
           <div>
             <HeadingSection as="h3">Light Nibbles</HeadingSection>
-            <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
+            <Decoration className="mb-4 mt-4" />
             <MenuItem price={4.99} title="Seafood Chowder">
               <p>Nullam iaculis vitae est vel volutpat.</p>
             </MenuItem>
@@ -109,7 +110,7 @@ export default function Home() {
           </div>
           <div>
             <HeadingSection as="h3">Tummy Fillers</HeadingSection>
-            <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
+            <Decoration className="mb-4 mt-4" />
             <MenuItem price={8.99} title="Fish Fingers &amp; Fries">
               <p>
                 Aliquam erat volutpat. Nullam at lectus ut dolor dictum feugiat
@@ -130,7 +131,7 @@ export default function Home() {
           </div>
           <div>
             <HeadingSection as="h3">The Sweet Tooth</HeadingSection>
-            <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
+            <Decoration className="mb-4 mt-4" />
             <MenuItem price={3.99} title="Doughnuts">
               <p>
                 Nunc mauris enim, pulvinar vitae mi ut, suscipit elementum
@@ -149,7 +150,7 @@ export default function Home() {
           </div>
           <div>
             <HeadingSection as="h3">Drinks</HeadingSection>
-            <div className="decoration-gold h-6 bg-no-repeat bg-center mb-4 mt-4"></div>
+            <Decoration className="mb-4 mt-4" />
             <MenuItem price={2.99} title="Hot or Iced Coffee">
               <p>Morbi pretium ultricies erat et sodales.</p>
             </MenuItem>
@@ -171,7 +172,7 @@ export default function Home() {
         <div className="container grid grid-cols-12 mx-auto px-14 py-20 text-white text-center">
           <div className="bg-black col-start-3 col-span-8 bg-opacity-60 py-16 px-16 mx-auto">
             <HeadingSection color="white">Guest Reviews</HeadingSection>
-            <div className="decoration-white h-6 bg-no-repeat bg-center mb-8 mt-4 opacity-70"></div>
+            <Decoration className="mb-8 mt-4 opacity-70" color="white" />
             <p className="font-serif font-bold text-2xl leading-loose mb-6">
               If you’ve been to one of our restaurants, you’ve seen – and tasted
               – what keeps our customers coming back for more. Perfect materials
@@ -196,7 +197,7 @@ export default function Home() {
             <div className="col-span-6 px-6">
               <div class="text-center mb-10">
                 <HeadingSection>Just the right food</HeadingSection>
-                <div className="decoration-gold h-6 bg-no-repeat bg-center mb-8 mt-4"></div>
+                <Decoration className="mb-8 mt-4" />
                 <p>
                   If you’ve been to one of our restaurants, you’ve seen – and
                   tasted – what keeps our customers coming back for more.
@@ -262,7 +263,11 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-12 container mx-auto px-14 py-10">
           <div>
             <h4 className="font-cursive text-xl">About Us</h4>
-            <div className="decoration-white h-5 mt-5 mb-5 bg-no-repeat bg-center opacity-70"></div>
+            <Decoration
+              className="mt-5 mb-5 opacity-70"
+              color="white"
+              size={5}
+            />
             <p>
               Lambda's new and expanded Chelsea location represents a truly
               authentic <strong>Greek</strong> patisserie, featuring breakfasts
@@ -273,7 +278,11 @@ export default function Home() {
           </div>
           <div>
             <h4 className="font-cursive text-xl">Opening Hours</h4>
-            <div className="decoration-white h-5 mt-5 mb-5 bg-no-repeat bg-center opacity-70"></div>
+            <Decoration
+              className="mt-5 mb-5 opacity-70"
+              color="white"
+              size={5}
+            />
             <p>
               <strong>Mon-Thu:</strong> 7:00am - 8:00pm
               <br />
@@ -282,7 +291,11 @@ export default function Home() {
           </div>
           <div>
             <h4 className="font-cursive text-xl">Our Location</h4>
-            <div className="decoration-white h-5 mt-5 mb-5 bg-no-repeat bg-center opacity-70"></div>
+            <Decoration
+              className="mt-5 mb-5 opacity-70"
+              color="white"
+              size={5}
+            />
             <p className="font-bold">
               19th Paradise Street Sitia
               <br />
