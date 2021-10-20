@@ -1,13 +1,12 @@
-import Button from "../components/Button";
 import ButtonOpacity from "../components/ButtonOpacity";
 import Decoration from "../components/Decoration";
 import Footer from "../sections/Footer";
 import Head from "../components/Head";
 import HeadingSection from "../components/HeadingSection";
-import Input from "../components/Input";
 import MenuItem from "../components/MenuItem";
 import NavItem from "../components/NavItem";
 import Thumbnail from "../components/Thumbnail";
+import FormContact from "../containers/FormContact";
 
 export default function Home() {
   return (
@@ -210,51 +209,7 @@ export default function Home() {
                   materials and freshly baked food.
                 </p>
               </div>
-              <form>
-                <div className="grid grid-cols-2 gap-x-12 mb-4">
-                  <div>
-                    <label
-                      className="block font-bold text-yellow-500 mb-1"
-                      htmlFor="first-name"
-                    >
-                      First name
-                    </label>
-                    <Input
-                      id="first-name"
-                      placeholder="First name"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      className="block font-bold text-yellow-500 mb-1"
-                      htmlFor="last-name"
-                    >
-                      Last name
-                    </label>
-                    <Input id="last-name" placeholder="Last name" type="text" />
-                  </div>
-                  <div>
-                    <label
-                      className="block font-bold text-yellow-500 mb-1"
-                      htmlFor="date"
-                    >
-                      Date
-                    </label>
-                    <Input id="date" placeholder="Date" type="text" />
-                  </div>
-                  <div>
-                    <label
-                      className="block font-bold text-yellow-500 mb-1"
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <Input id="email" placeholder="Email" type="email" />
-                  </div>
-                </div>
-                <Button type="submit">Book now!</Button>
-              </form>
+              <FormContact />
             </div>
           </div>
         </div>
