@@ -5,6 +5,7 @@ import Head from "../components/Head";
 import HeadingSection from "../components/HeadingSection";
 import MenuItem from "../components/MenuItem";
 import NavItem from "../components/NavItem";
+import Testimonial from "../components/Testimonial";
 import Thumbnail from "../components/Thumbnail";
 import FormContact from "../containers/FormContact";
 
@@ -170,18 +171,16 @@ export default function Home() {
 
       <section className="bg-section-3 bg-center bg-cover">
         <div className="container grid grid-cols-12 mx-auto px-14 py-20 text-white text-center">
-          <div className="bg-black col-start-3 col-span-8 bg-opacity-60 py-16 px-16 mx-auto">
-            <HeadingSection color="white">Guest Reviews</HeadingSection>
-            <Decoration className="mb-8 mt-4 opacity-70" color="white" />
-            <p className="font-serif font-bold text-2xl leading-loose mb-6">
+          <Testimonial title="Guest Reviews">
+            <p>
               If you’ve been to one of our restaurants, you’ve seen – and tasted
               – what keeps our customers coming back for more. Perfect materials
               and freshly baked food, delicious Lambda cakes, muffins, and
               gourmet coffees make us hard to resist! Stop in today and check us
               out!
             </p>
-            <p className="mb-2">- food inc, New York</p>
-          </div>
+            <Testimonial.Footer>- food inc, New York</Testimonial.Footer>
+          </Testimonial>
         </div>
       </section>
 
