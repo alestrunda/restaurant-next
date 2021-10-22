@@ -18,7 +18,7 @@ export default function Home() {
         <div className="absolute left-0 top-0 h-full w-full bg-black opacity-10"></div>
         <div className="absolute left-0 top-0 w-full">
           <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black to-transparent opacity-80"></div>
-          <div className="container flex justify-between mx-auto relative z-10 px-14">
+          <div className="container flex justify-between mx-auto relative z-20 px-14">
             <img className="self-center" src="img/logo.png" />
             <nav className="font-serif font-bold text-shadow-sm text-xl mb-4">
               <ul className="flex justify-between">
