@@ -112,7 +112,7 @@ export default function Home() {
               <img src="img/content/image2.png" />
             </div>
             <div className="col-span-6 px-6">
-              <div class="text-center mb-10">
+              <div className="text-center mb-10">
                 <HeadingSection>Just the right food</HeadingSection>
                 <Decoration className="mb-8 mt-4" />
                 <p>
