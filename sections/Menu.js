@@ -12,21 +12,21 @@ const LIGHT_NIBBLES = [
   {
     description:
       "Sed tristique egestas mi, sit amet ullamcorper mi blandit id. Vivamus at elementum nibh.",
-    id: 1,
+    id: 2,
     isSpecial: true,
     price: 4.99,
     title: "Island Salad",
   },
   {
     description: "Nam ut tellus tincidunt, imperdiet massa sed, congue augue.",
-    id: 1,
+    id: 3,
     price: 8.99,
     title: "Lobster Baby Rolls",
   },
   {
     description:
       "In auctor porta dolor id laoreet. Sed porttitor mauris eu neque semper venenatis.",
-    id: 1,
+    id: 4,
     price: 7.99,
     title: "BLT Croissant-wich",
   },
@@ -42,19 +42,19 @@ const TUMMY_FILLERS = [
   },
   {
     description: "Praesent accumsan, nunc dictum venenatis scelerisque.",
-    id: 1,
+    id: 2,
     price: 9.99,
     title: "Grilled Sausages Platter",
   },
   {
     description: "Velit sem sodales dolor, sed aliquet ligula mauris vitae ex.",
-    id: 1,
+    id: 3,
     price: 9.99,
     title: "Roast Chicken & Potatoes",
   },
   {
     description: "In quis velit id odio laoreet convallis.",
-    id: 1,
+    id: 4,
     isSpecial: true,
     price: 11.99,
     title: "Steak Frites",
@@ -72,14 +72,14 @@ const SWEET_TOOTH = [
   {
     description:
       "Etiam neque libero, dictum in luctus eu, accumsan placerat purus.",
-    id: 1,
+    id: 2,
     isSpecial: true,
     price: 3.99,
     title: "Fruit Danish",
   },
   {
     description: "Vivamus volutpat, mauris lacinia sagittis cursus.",
-    id: 1,
+    id: 3,
     price: 4.99,
     title: "Pie of the Day",
   },
@@ -95,14 +95,14 @@ const DRINKS = [
   {
     description:
       "Duis sollicitudin pharetra lectus, non euismod nunc mattis eget.",
-    id: 3,
+    id: 2,
     price: 2.99,
     title: "Hot or Iced Tea",
   },
   {
     description:
       "Nam faucibus risus id ante hendrerit, nec euismod odio finibus.",
-    id: 2,
+    id: 3,
     price: 3.99,
     title: "Fresh Fruit Smoothies",
   },
