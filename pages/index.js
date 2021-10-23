@@ -3,11 +3,11 @@ import Decoration from "../components/Decoration";
 import Head from "../components/Head";
 import HeadingSection from "../components/HeadingSection";
 import NavItem from "../components/NavItem";
-import Testimonial from "../components/Testimonial";
 import Thumbnail from "../components/Thumbnail";
 import FormContact from "../containers/FormContact";
 import Footer from "../sections/Footer";
 import Menu from "../sections/Menu";
+import Testimonials from "../sections/Testimonials";
 
 export default function Home() {
   return (
@@ -87,20 +87,7 @@ export default function Home() {
 
       <Menu />
 
-      <section className="bg-section-3 bg-center bg-cover">
-        <div className="container grid grid-cols-12 mx-auto px-14 py-20 text-white text-center">
-          <Testimonial title="Guest Reviews">
-            <p>
-              If you’ve been to one of our restaurants, you’ve seen – and tasted
-              – what keeps our customers coming back for more. Perfect materials
-              and freshly baked food, delicious Lambda cakes, muffins, and
-              gourmet coffees make us hard to resist! Stop in today and check us
-              out!
-            </p>
-            <Testimonial.Footer>- food inc, New York</Testimonial.Footer>
-          </Testimonial>
-        </div>
-      </section>
+      <Testimonials />
 
       <section className="bg-pattern section-shadow relative">
         <div className="container mx-auto px-14 py-20">
