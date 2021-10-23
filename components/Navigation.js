@@ -1,5 +1,33 @@
 import classNames from "classnames";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
+const LINKS = [
+  {
+    href: "/",
+    title: "Home",
+  },
+  {
+    href: "",
+    title: "About",
+  },
+  {
+    href: "",
+    title: "Igredients",
+  },
+  {
+    href: "",
+    title: "Menu",
+  },
+  {
+    href: "",
+    title: "Reviews",
+  },
+  {
+    href: "/contact",
+    title: "Reservations",
+  },
+];
 
 const Item = ({ active, href, title }) => (
   <li className="group mx-3 relative overflow-hidden">
@@ -16,17 +44,22 @@ const Item = ({ active, href, title }) => (
   </li>
 );
 
-const Navigation = () => (
-  <nav className="font-serif font-bold text-shadow-sm text-xl mb-4">
-    <ul className="flex justify-between">
-      <Item active href="/" title="Home" />
-      <Item href="" title="About" />
-      <Item href="" title="Igredients" />
-      <Item href="" title="Menu" />
-      <Item href="" title="Reviews" />
-      <Item href="contact" title="Reservations" />
-    </ul>
-  </nav>
-);
+const Navigation = () => {
+  const router = useRouter();
+
+  return (
+    <nav className="font-serif font-bold text-shadow-sm text-xl mb-4">
+      <ul className="flex justify-between">
+        {LINKS.map((link) => (
+          <Item
+            active={router.pathname === link.href}
+            href={link.href}
+            title={link.title}
+          />
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export default Navigation;
