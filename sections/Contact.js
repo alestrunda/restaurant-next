@@ -14,7 +14,7 @@ const Contact = () => (
         </div>
         <div className="col-span-6 px-6">
           <div className="text-center mb-10">
-            <HeadingSection>Just the right food</HeadingSection>
+            <HeadingSection>We are here for you</HeadingSection>
             <Decoration className="mb-8 mt-4" />
             <p>
               If you’ve been to one of our restaurants, you’ve seen – and tasted
