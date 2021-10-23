@@ -50,10 +50,11 @@ const Navigation = () => {
   return (
     <nav className="font-serif font-bold text-shadow-sm text-xl mb-4">
       <ul className="flex justify-between">
-        {LINKS.map((link) => (
+        {LINKS.map((link, index) => (
           <Item
             active={router.pathname === link.href}
             href={link.href}
+            key={index}
             title={link.title}
           />
         ))}
