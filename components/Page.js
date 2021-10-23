@@ -1,7 +1,7 @@
 import Head from "./Head";
 
 const Page = ({ children }) => (
-  <div className="flex flex-col justify-center min-h-screen">
+  <div className="flex flex-col min-h-screen">
     <Head />
     {children}
   </div>
