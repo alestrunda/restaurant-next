@@ -8,19 +8,19 @@ const LINKS = [
     title: "Home",
   },
   {
-    href: "",
+    href: "/",
     title: "About",
   },
   {
-    href: "",
+    href: "/",
     title: "Igredients",
   },
   {
-    href: "",
+    href: "/",
     title: "Menu",
   },
   {
-    href: "",
+    href: "/",
     title: "Reviews",
   },
   {
