@@ -1,15 +1,14 @@
-import Head from "../components/Head";
 import Header from "../components/Header";
+import Page from "../components/Page";
 import ContactSection from "../sections/Contact";
 import Footer from "../sections/Footer";
 
 const Contact = () => (
-  <div className="flex flex-col justify-center min-h-screen">
-    <Head />
+  <Page>
     <Header />
     <ContactSection />
     <Footer />
-  </div>
+  </Page>
 );
 
 export default Contact;

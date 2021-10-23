@@ -1,8 +1,8 @@
 import ButtonOpacity from "../components/ButtonOpacity";
 import Decoration from "../components/Decoration";
-import Head from "../components/Head";
 import Header from "../components/Header";
 import HeadingSection from "../components/HeadingSection";
+import Page from "../components/Page";
 import Thumbnail from "../components/Thumbnail";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
@@ -11,9 +11,7 @@ import Testimonials from "../sections/Testimonials";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center min-h-screen">
-      <Head />
-
+    <Page>
       <Header isOverlay>
         <div className="container mx-auto text-center px-14 py-32 relative z-10">
           <h1 className="font-cursive leading-normal text-shadow-md text-3xl xl:text-8xl xl:leading-tight lg:text-7xl lg:leading-tight md:text-5xl md:leading-normal sm:text-4xl sm:leading-normal">
@@ -75,6 +73,6 @@ export default function Home() {
       <Contact />
 
       <Footer />
-    </div>
+    </Page>
   );
 }
