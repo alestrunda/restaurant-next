@@ -1,8 +1,8 @@
 import ButtonOpacity from "../components/ButtonOpacity";
 import Decoration from "../components/Decoration";
 import Head from "../components/Head";
+import Header from "../components/Header";
 import HeadingSection from "../components/HeadingSection";
-import NavItem from "../components/NavItem";
 import Thumbnail from "../components/Thumbnail";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
@@ -14,24 +14,7 @@ export default function Home() {
     <div className="flex flex-col justify-center min-h-screen">
       <Head />
 
-      <div className="bg-section-1 bg-center bg-cover text-white min-h-screen flex flex-col justify-center relative">
-        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-10"></div>
-        <div className="absolute left-0 top-0 w-full">
-          <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black to-transparent opacity-80"></div>
-          <div className="container flex justify-between mx-auto relative z-20 px-14">
-            <img className="self-center" src="img/logo.png" />
-            <nav className="font-serif font-bold text-shadow-sm text-xl mb-4">
-              <ul className="flex justify-between">
-                <NavItem active href="" title="Home" />
-                <NavItem href="" title="About" />
-                <NavItem href="" title="Igredients" />
-                <NavItem href="" title="Menu" />
-                <NavItem href="" title="Reviews" />
-                <NavItem href="" title="Reservations" />
-              </ul>
-            </nav>
-          </div>
-        </div>
+      <Header isOverlay>
         <div className="container mx-auto text-center px-14 py-32 relative z-10">
           <h1 className="font-cursive leading-normal text-shadow-md text-3xl xl:text-8xl xl:leading-tight lg:text-7xl lg:leading-tight md:text-5xl md:leading-normal sm:text-4xl sm:leading-normal">
             the right ingredients
@@ -42,7 +25,7 @@ export default function Home() {
           <ButtonOpacity className="mx-3">book a table</ButtonOpacity>
           <ButtonOpacity className="mx-3">see the menu</ButtonOpacity>
         </div>
-      </div>
+      </Header>
 
       <section className="bg-pattern section-shadow relative">
         <div className="container mx-auto md:grid grid-cols-12 items-center text-center px-14 py-20">
