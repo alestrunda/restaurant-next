@@ -1,11 +1,14 @@
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Page from "./layout/Page";
+import IngredientsIntro from "../sections/IngredientsIntro";
+import IngredientsSection from "../sections/Ingredients";
 
 const Ingredients = () => (
   <Page>
     <Header />
-    TODO
+    <IngredientsIntro />
+    <IngredientsSection />
     <Footer />
   </Page>
 );
