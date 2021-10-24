@@ -1,11 +1,14 @@
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Page from "./layout/Page";
+import Introduction from "../sections/Introduction";
+import Testimonials from "../sections/Testimonials";
 
 const About = () => (
   <Page>
     <Header />
-    TODO
+    <Introduction />
+    <Testimonials />
     <Footer />
   </Page>
 );
