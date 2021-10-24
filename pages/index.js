@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Menu />
+      <Menu featuredOnly />
 
       <Testimonials />
 
