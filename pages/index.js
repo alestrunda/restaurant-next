@@ -20,8 +20,12 @@ export default function Home() {
             for the right food
           </h1>
           <Decoration className="mt-10 mb-14" color="white" size={8} />
-          <ButtonOpacity className="mx-3">book a table</ButtonOpacity>
-          <ButtonOpacity className="mx-3">see the menu</ButtonOpacity>
+          <ButtonOpacity className="mx-3" href="/contact">
+            book a table
+          </ButtonOpacity>
+          <ButtonOpacity className="mx-3" href="/menu">
+            see the menu
+          </ButtonOpacity>
         </div>
       </Header>
 
