@@ -1,3 +1,5 @@
+import ReviwesSection from "../sections/Reviewes";
+import Testimonials from "../sections/Testimonials";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Page from "./layout/Page";
@@ -5,7 +7,8 @@ import Page from "./layout/Page";
 const Reviews = () => (
   <Page>
     <Header />
-    TODO
+    <ReviwesSection />
+    <Testimonials />
     <Footer />
   </Page>
 );
