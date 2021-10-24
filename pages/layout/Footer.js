@@ -1,4 +1,4 @@
-import Decoration from "../components/Decoration";
+import Decoration from "../../components/Decoration";
 
 const Footer = () => (
   <footer className="bg-gray-900 text-white text-center">

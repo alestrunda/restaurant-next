@@ -1,11 +1,11 @@
 import ButtonOpacity from "../components/ButtonOpacity";
 import Decoration from "../components/Decoration";
-import Header from "../components/Header";
 import HeadingSection from "../components/HeadingSection";
-import Page from "../components/Page";
 import Thumbnail from "../components/Thumbnail";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Page from "./layout/Page";
 import Contact from "../sections/Contact";
-import Footer from "../sections/Footer";
 import Menu from "../sections/Menu";
 import Testimonials from "../sections/Testimonials";
 

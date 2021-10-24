@@ -1,6 +1,6 @@
-import Header from "../components/Header";
-import Page from "../components/Page";
-import Footer from "../sections/Footer";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Page from "./layout/Page";
 
 const Reviews = () => (
   <Page>
