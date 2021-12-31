@@ -1,6 +1,6 @@
 import HeadNext from "next/head";
 
-const Head = ({ title = "Restaurant Next" }) => (
+const Head = ({ title = "Restaurant Next", useEdamam = false }) => (
   <HeadNext>
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,9 @@ const Head = ({ title = "Restaurant Next" }) => (
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon/favicon.ico" />
+    {useEdamam && (
+      <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    )}
   </HeadNext>
 );
 
