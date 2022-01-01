@@ -8,7 +8,7 @@ import Page from "../layout/Page";
 
 const TAGS_TO_SHOW = ["FAT", "CHOCDF", "PROCNT", "CHOLE"];
 
-const Menu = ({ error, recipe }) => (
+const Recipe = ({ error, recipe }) => (
   <Page title={recipe.label} useEdamam>
     <Header />
     <div className="container mx-auto px-14 py-20">
@@ -96,4 +96,4 @@ export async function getStaticProps(props) {
   };
 }
 
-export default Menu;
+export default Recipe;
