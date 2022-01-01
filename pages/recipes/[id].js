@@ -54,6 +54,7 @@ const Menu = ({ error, recipe }) => (
                   {label}
                 </span>
               ))}
+              <img className="mt-4" alt={recipe.label} src={recipe.image} />
             </div>
           </div>
         </>
