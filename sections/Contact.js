@@ -5,15 +5,15 @@ import FormContact from "../containers/FormContact";
 const Contact = () => (
   <section className="bg-pattern section-shadow relative">
     <div className="container mx-auto px-14 py-20">
-      <div className="grid grid-cols-12 gap-12 items-center">
-        <div className="col-span-3">
-          <img src="img/content/image1.png" />
+      <div className="grid grid-cols-4 gap-6 lg:gap-12 items-center">
+        <div className="col-span-2 lg:col-span-1">
+          <img className="mx-auto" src="img/content/image1.png" />
         </div>
-        <div className="col-span-3">
-          <img src="img/content/image2.png" />
+        <div className="col-span-2 lg:col-span-1">
+          <img className="mx-auto" src="img/content/image2.png" />
         </div>
-        <div className="col-span-6 px-6">
-          <div className="text-center mb-10">
+        <div className="col-span-4 lg:col-span-2">
+          <div className="text-center mb-10 px-6">
             <HeadingSection>We are here for you</HeadingSection>
             <Decoration className="mb-8 mt-4" />
             <p>

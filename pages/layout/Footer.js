@@ -2,8 +2,8 @@ import Decoration from "../../components/Decoration";
 
 const Footer = () => (
   <footer className="bg-gray-900 text-white text-center">
-    <div className="grid grid-cols-3 gap-12 container mx-auto px-14 py-10">
-      <div>
+    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12 container mx-auto px-14 py-10">
+      <div className="col-span-1 md:col-span-2 lg:col-span-1">
         <h4 className="font-cursive text-xl">About Us</h4>
         <Decoration className="mt-5 mb-5 opacity-70" color="white" size={5} />
         <p>

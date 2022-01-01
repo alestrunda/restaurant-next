@@ -6,8 +6,10 @@ const Header = ({ children, isOverlay }) => {
   const content = (
     <>
       <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black to-transparent opacity-80"></div>
-      <div className="container flex justify-between mx-auto relative z-20 px-14">
-        <img className="self-center" src="/img/logo.png" />
+      <div className="container flex justify-between items-center mx-auto px-14">
+        <div className="relative z-10 flex justify-center h-124px">
+          <img className="self-center" src="/img/logo.png" />
+        </div>
         <Navigation />
       </div>
     </>
@@ -22,7 +24,7 @@ const Header = ({ children, isOverlay }) => {
     >
       <div className="absolute left-0 top-0 h-full w-full bg-black opacity-10"></div>
       {isOverlay ? (
-        <div className="absolute left-0 top-0 w-full">{content}</div>
+        <div className="absolute left-0 top-0 w-full z-20">{content}</div>
       ) : (
         <>{content}</>
       )}

@@ -3,7 +3,7 @@ import Input from "../components/Input";
 
 const FormContact = () => (
   <form>
-    <div className="grid grid-cols-2 gap-x-12 mb-4">
+    <div className="sm:grid sm:grid-cols-2 sm:gap-x-12 mb-4">
       <div>
         <label
           className="block font-bold text-yellow-500 mb-1"

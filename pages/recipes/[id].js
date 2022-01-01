@@ -17,7 +17,7 @@ const Menu = ({ error, recipe }) => (
         <>
           <HeadingSection as="h1">{recipe.label}</HeadingSection>
           <Decoration className="mb-8 mt-4" />
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             <div>
               <Heading>Ingredients:</Heading>
               <ul className="list-disc pl-10 font-cursive mb-4">
@@ -55,7 +55,11 @@ const Menu = ({ error, recipe }) => (
                   {label}
                 </span>
               ))}
-              <img className="mt-4" alt={recipe.label} src={recipe.image} />
+              <img
+                className="mt-4 mb-4"
+                alt={recipe.label}
+                src={recipe.image}
+              />
             </div>
           </div>
         </>

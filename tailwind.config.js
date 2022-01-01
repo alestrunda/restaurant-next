@@ -23,6 +23,9 @@ module.exports = {
           500: "#cc9900",
         },
       },
+      height: {
+        "124px": "124px",
+      },
     },
   },
   variants: {

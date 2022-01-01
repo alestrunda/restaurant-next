@@ -213,7 +213,7 @@ const Menu = ({ featuredOnly }) => {
 
   return (
     <section className="bg-pattern section-shadow relative">
-      <div className="container mx-auto px-14 py-20 grid grid-cols-2 gap-12 text-lg">
+      <div className="container mx-auto px-14 py-20 md:grid md:grid-cols-2 gap-12 text-lg">
         <div>
           <HeadingSection as="h3">Light Nibbles</HeadingSection>
           <Decoration className="mb-4 mt-4" />
