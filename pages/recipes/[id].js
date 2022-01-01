@@ -1,5 +1,6 @@
 import { api as recipeApi, idMapping } from "../../apis/recipe";
 import Decoration from "../../components/Decoration";
+import Heading from "../../components/Heading";
 import HeadingSection from "../../components/HeadingSection";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
@@ -18,7 +19,7 @@ const Menu = ({ error, recipe }) => (
           <Decoration className="mb-8 mt-4" />
           <div className="grid grid-cols-2 gap-12">
             <div>
-              <h2 className="font-cursive text-xl">Ingredients:</h2>
+              <Heading>Ingredients:</Heading>
               <ul className="list-disc pl-10 font-cursive mb-4">
                 {recipe.ingredientLines.map((ingredientLine, index) => (
                   <li key={index}>{ingredientLine}</li>
@@ -45,7 +46,7 @@ const Menu = ({ error, recipe }) => (
               })}
             </div>
             <div>
-              <h2 className="font-cursive text-xl">Health labels:</h2>
+              <Heading>Health labels:</Heading>
               {recipe.healthLabels.map((label, index) => (
                 <span
                   key={index}
