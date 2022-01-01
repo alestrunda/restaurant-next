@@ -1,8 +1,8 @@
 import Head from "./Head";
 
-const Page = ({ children, useEdamam }) => (
+const Page = ({ children, title, useEdamam }) => (
   <div className="flex flex-col min-h-screen">
-    <Head useEdamam={useEdamam} />
+    <Head useEdamam={useEdamam} title={title} />
     {children}
   </div>
 );
