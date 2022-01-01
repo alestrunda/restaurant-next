@@ -11,7 +11,7 @@ export const idMapping = {
   "chocolate-truffles": "900dfc8e4b1f06180c5260983f15f11a",
   "chocolate-hazelnut-torte": "60e5f656088529547cecaf4b2c04a504",
   "cookie-dough-ice-cream": "9219b3c0524b8ae9b8efee4ad48da0bb",
-  "Strawberries With Sour Cream": "4abb432a19ed768f8ee69b235bbb6684",
+  "strawberries-with-sour-cream": "4abb432a19ed768f8ee69b235bbb6684",
   "ice-cream-snowballs": "91e46404198f2263732cf43fb51a89ed",
   "apple-carrot-cupcake": "0c100a129b57c9f1bde46b04e38cf2a1",
   "lemon-cake": "71199681d0c28c1d1e0cede73eb6ec54",
