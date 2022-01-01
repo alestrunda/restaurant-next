@@ -8,10 +8,11 @@ const HeadingSection = ({
   children,
 }) => {
   const Component = as;
+
   return (
     <Component
       className={classNames(
-        "font-cursive text-4xl text-center",
+        "font-cursive text-2xl md:text-4xl text-center",
         className,
         color && `text-${color}`
       )}
