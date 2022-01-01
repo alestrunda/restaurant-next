@@ -5,7 +5,7 @@ import IngredientsIntro from "../sections/IngredientsIntro";
 import IngredientsSection from "../sections/Ingredients";
 
 const Ingredients = () => (
-  <Page>
+  <Page title="Ingredients">
     <Header />
     <IngredientsIntro />
     <IngredientsSection />

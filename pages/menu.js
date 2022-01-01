@@ -4,7 +4,7 @@ import Page from "./layout/Page";
 import MenuSection from "../sections/Menu";
 
 const Menu = () => (
-  <Page>
+  <Page title="Menu">
     <Header />
     <MenuSection />
     <Footer />

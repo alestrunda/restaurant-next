@@ -9,7 +9,7 @@ import Page from "../layout/Page";
 const TAGS_TO_SHOW = ["FAT", "CHOCDF", "PROCNT", "CHOLE"];
 
 const Menu = ({ error, recipe }) => (
-  <Page useEdamam>
+  <Page title={recipe.label} useEdamam>
     <Header />
     <div className="container mx-auto px-14 py-20">
       {error && <p className="text-red-500 text-center">{error}</p>}

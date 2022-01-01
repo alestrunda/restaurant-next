@@ -5,7 +5,7 @@ import Introduction from "../sections/Introduction";
 import Testimonials from "../sections/Testimonials";
 
 const About = () => (
-  <Page>
+  <Page title="About">
     <Header />
     <Introduction />
     <Testimonials />

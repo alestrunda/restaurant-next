@@ -1,8 +1,9 @@
 import HeadNext from "next/head";
+import { SITE_NAME } from "../../config";
 
-const Head = ({ title = "Restaurant Next", useEdamam = false }) => (
+const Head = ({ title, useEdamam = false }) => (
   <HeadNext>
-    <title>{title}</title>
+    <title>{title ? `${title} | ${SITE_NAME}` : SITE_NAME}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"

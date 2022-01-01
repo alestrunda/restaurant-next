@@ -5,7 +5,7 @@ import Header from "./layout/Header";
 import Page from "./layout/Page";
 
 const Reviews = () => (
-  <Page>
+  <Page title="Reviewes">
     <Header />
     <ReviwesSection />
     <Testimonials />

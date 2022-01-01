@@ -4,7 +4,7 @@ import Page from "./layout/Page";
 import ContactSection from "../sections/Contact";
 
 const Contact = () => (
-  <Page>
+  <Page title="Contact">
     <Header />
     <ContactSection />
     <Footer />
