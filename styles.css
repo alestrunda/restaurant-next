@@ -48,7 +48,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 
-@responsive {
+@layer utilities {
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0,0,0,0.30);
   }

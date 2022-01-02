@@ -8,7 +8,7 @@ const MenuItem = ({ children, isSpecial = false, price, title }) => (
     })}
   >
     {isSpecial && (
-      <span className="absolute top-0 -right-px px-2 py-1 bg-yellow-500 text-white text-sm transform -translate-y-full">
+      <span className="absolute top-0 -right-px px-2 py-1 bg-yellow-500 text-white text-sm -translate-y-full">
         Special
       </span>
     )}
