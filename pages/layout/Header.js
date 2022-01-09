@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Link from "next/link";
 import React from "react";
 import Navigation from "../../components/Navigation";
 
@@ -8,7 +9,9 @@ const Header = ({ children, isOverlay }) => {
       <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black to-transparent opacity-80"></div>
       <div className="container flex justify-between items-center mx-auto px-14">
         <div className="relative z-10 flex justify-center h-124px">
-          <img className="self-center" src="/img/logo.png" />
+          <Link href="/">
+            <img className="self-center cursor-pointer" src="/img/logo.png" />
+          </Link>
         </div>
         <Navigation />
       </div>
