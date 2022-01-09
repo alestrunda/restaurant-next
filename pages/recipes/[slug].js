@@ -1,4 +1,4 @@
-import { api as recipeApi, idMapping } from "../../apis/recipe";
+import { api as recipeApi, RECIPES } from "../../apis/recipe";
 import Decoration from "../../components/Decoration";
 import Heading from "../../components/Heading";
 import HeadingSection from "../../components/HeadingSection";
@@ -74,9 +74,9 @@ const Recipe = ({ error, recipe }) => (
 
 export async function getStaticPaths() {
   return {
-    paths: Object.keys(idMapping).map((id) => ({
+    paths: Object.keys(RECIPES).map((slug) => ({
       params: {
-        id,
+        slug,
       },
     })),
     fallback: false,
@@ -87,7 +87,7 @@ export async function getStaticProps(props) {
   let recipe = null;
   let error = null;
   try {
-    recipe = await recipeApi.getRecipe(props.params.id);
+    recipe = await recipeApi.getRecipe(props.params.slug);
   } catch (e) {
     error = e.message;
   }

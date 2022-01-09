@@ -1,26 +1,71 @@
-export const idMapping = {
-  "strawberry-banana-ice-milk": "42a1ea440e8ed2473a759f4ef54ab5ae",
-  "banana-bread": "c87b75a2fa4f28dbc340f7c176f57faf",
-  "pizza-dough": "1b6dfeaf0988f96b187c7c9bb69a14fa",
-  "whole-wheat-pancake-and-waffle-mix": "2aa69f32bb405ea0c6e29fe78c830065",
-  "plum-waffle-tart": "c398e92ad22a0b1b1489144e6b89b986",
-  "caramel-cake": "b66666d5c882ca199f43def8f1b8a03f",
-  "pistachio-cake": "0bc10f882be73fae8bfaac8086d13d23",
-  "honey-almond-date-balls": "eaab43bafe44b16705aef082120d2e40",
-  "walnut-crackers": "ac886f8bb78acc41a64f02a0f100937e",
-  "chocolate-truffles": "900dfc8e4b1f06180c5260983f15f11a",
-  "chocolate-hazelnut-torte": "60e5f656088529547cecaf4b2c04a504",
-  "cookie-dough-ice-cream": "9219b3c0524b8ae9b8efee4ad48da0bb",
-  "strawberries-with-sour-cream": "4abb432a19ed768f8ee69b235bbb6684",
-  "ice-cream-snowballs": "91e46404198f2263732cf43fb51a89ed",
-  "apple-carrot-cupcake": "0c100a129b57c9f1bde46b04e38cf2a1",
-  "lemon-cake": "71199681d0c28c1d1e0cede73eb6ec54",
+export const RECIPES = {
+  "strawberry-banana-ice-milk": {
+    id: "42a1ea440e8ed2473a759f4ef54ab5ae",
+    title: "Strawberry Banana Ice Milk",
+  },
+  "banana-bread": {
+    id: "c87b75a2fa4f28dbc340f7c176f57faf",
+    title: "Banana Bread",
+  },
+  "pizza-dough": {
+    id: "1b6dfeaf0988f96b187c7c9bb69a14fa",
+    title: "Pizza Dough",
+  },
+  "whole-wheat-pancake-and-waffle-mix": {
+    id: "2aa69f32bb405ea0c6e29fe78c830065",
+    title: "Whole Wheat Pancake and Waffle Mix",
+  },
+  "plum-waffle-tart": {
+    id: "c398e92ad22a0b1b1489144e6b89b986",
+    title: "Plum Waffle Tart",
+  },
+  "caramel-cake": {
+    id: "b66666d5c882ca199f43def8f1b8a03f",
+    title: "Caramel Cake",
+  },
+  "pistachio-cake": {
+    id: "0bc10f882be73fae8bfaac8086d13d23",
+    title: "Pistachio Cake",
+  },
+  "honey-almond-date-balls": {
+    id: "eaab43bafe44b16705aef082120d2e40",
+    title: "Honey Almond Date Balls",
+  },
+  "walnut-crackers": {
+    id: "ac886f8bb78acc41a64f02a0f100937e",
+    title: "Walnut Crackers",
+  },
+  "chocolate-truffles": {
+    id: "900dfc8e4b1f06180c5260983f15f11a",
+    title: "Chocolate Truffles",
+  },
+  "chocolate-hazelnut-torte": {
+    id: "60e5f656088529547cecaf4b2c04a504",
+    title: "Chocolate Hazelnut Torte",
+  },
+  "cookie-dough-ice-cream": {
+    id: "9219b3c0524b8ae9b8efee4ad48da0bb",
+    title: "Cookie Dough Ice Cream",
+  },
+  "strawberries-with-sour-cream": {
+    id: "4abb432a19ed768f8ee69b235bbb6684",
+    title: "Strawberries with Sour Cream",
+  },
+  "ice-cream-snowballs": {
+    id: "91e46404198f2263732cf43fb51a89ed",
+    title: "Ice Cream Snowballs",
+  },
+  "apple-carrot-cupcake": {
+    id: "0c100a129b57c9f1bde46b04e38cf2a1",
+    title: "Apple Carrot Cupcake",
+  },
+  "lemon-cake": { id: "71199681d0c28c1d1e0cede73eb6ec54", title: "Lemon Cake" },
 };
 
 export const api = {
-  getRecipe: async (id) => {
+  getRecipe: async (slug) => {
     const response = await fetch(
-      `${process.env.API_RECIPE_URL}/${idMapping[id]}?app_id=${process.env.API_RECIPE_ID}&app_key=${process.env.API_RECIPE_KEY}&type=public`
+      `${process.env.API_RECIPE_URL}/${RECIPES[slug].id}?app_id=${process.env.API_RECIPE_ID}&app_key=${process.env.API_RECIPE_KEY}&type=public`
     );
     if (!response.ok) {
       throw new Error(`${response.status} ${response.statusText}`);
