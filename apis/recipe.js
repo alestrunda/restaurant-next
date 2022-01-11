@@ -39,27 +39,6 @@ export const RECIPES = {
     id: "900dfc8e4b1f06180c5260983f15f11a",
     title: "Chocolate Truffles",
   },
-  "chocolate-hazelnut-torte": {
-    id: "60e5f656088529547cecaf4b2c04a504",
-    title: "Chocolate Hazelnut Torte",
-  },
-  "cookie-dough-ice-cream": {
-    id: "9219b3c0524b8ae9b8efee4ad48da0bb",
-    title: "Cookie Dough Ice Cream",
-  },
-  "strawberries-with-sour-cream": {
-    id: "4abb432a19ed768f8ee69b235bbb6684",
-    title: "Strawberries with Sour Cream",
-  },
-  "ice-cream-snowballs": {
-    id: "91e46404198f2263732cf43fb51a89ed",
-    title: "Ice Cream Snowballs",
-  },
-  "apple-carrot-cupcake": {
-    id: "0c100a129b57c9f1bde46b04e38cf2a1",
-    title: "Apple Carrot Cupcake",
-  },
-  "lemon-cake": { id: "71199681d0c28c1d1e0cede73eb6ec54", title: "Lemon Cake" },
 };
 
 export const api = {
